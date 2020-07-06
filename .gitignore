@@ -1,3 +1,5 @@
+/content
+
 /node_modules
 /site/plugins
 # make sure to whitelist custom plugins
