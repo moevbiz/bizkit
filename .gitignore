@@ -1,4 +1,8 @@
+# don't add content to git repository
 /content
+
+# ignore the kirby folder because it is installed via submodule
+/kirby
 
 /node_modules
 /site/plugins
