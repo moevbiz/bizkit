@@ -8,8 +8,6 @@
 /kirby
 
 /node_modules
-package-lock.json
-
 
 # make sure to whitelist custom plugins
 # and plugins not installed via composer
