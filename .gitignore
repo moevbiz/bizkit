@@ -5,9 +5,10 @@
 /kirby
 
 /node_modules
-/site/plugins
+
 # make sure to whitelist custom plugins
 # and plugins not installed via composer
+
 /vendor
 
 # System files
