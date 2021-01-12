@@ -1,12 +1,14 @@
 const { watch } = require('fs');
 const path = require('path');
 const { merge } = require('webpack-merge');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const commonConfig = {
-    entry: "./assets/js/src/index.js",
+    context: path.resolve(__dirname, './assets/src'),
+    entry: "./js/index.js",
     output: {
-        path: path.resolve(__dirname, "./assets/js/dist"),
-        filename: "bundle.js",
+        path: path.resolve(__dirname, "./assets/dist"),
+        filename: "./js/bundle.js",
     },
     module: {
         rules: [
@@ -21,8 +23,8 @@ const commonConfig = {
                 }
             },
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                test: /\.(sa|sc|c)ss$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -38,13 +40,17 @@ const commonConfig = {
               }
         ]
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: './css/bundle.css'
+        }),
+    ],
     resolve: {
         extensions: ['.js', '.jsx', '.css'],
         modules: [
           'node_modules'
         ]        
     },
-    watch: true,
 }
 
 module.exports = (env, argv) => {
@@ -63,6 +69,7 @@ module.exports = (env, argv) => {
             optimization: {
                 minimize: false
             },
+            watch: true,
         })
     }
 
