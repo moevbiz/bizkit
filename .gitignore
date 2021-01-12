@@ -1,7 +1,10 @@
+# don't commit secrets
+.env
+
 # don't add content to git repository
 /content
 
-# ignore the kirby folder because it is installed via submodule
+# ignore the kirby folder because it is installed via composer
 /kirby
 
 /node_modules
