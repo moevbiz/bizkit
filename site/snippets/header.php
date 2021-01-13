@@ -6,11 +6,11 @@
     <title><?= $site->title(); ?></title>
 
     <?= css([
-        'assets/css/style.css',
+        'assets/dist/css/bundle.css',
         ]); ?>
         
     <?= js([
-        'assets/js/script.css',
+        'assets/dist/js/bundle.js',
         ]); ?>
 </head>
 <body>

@@ -11,6 +11,7 @@
 
 # make sure to whitelist custom plugins
 # and plugins not installed via composer
+# in site/plugins/.gitignore
 
 /vendor
 
