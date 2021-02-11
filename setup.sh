@@ -22,7 +22,7 @@ if ! [ -x "$(command -v valet)" ]; then
 else
     parked=$(valet parked)
     if [[ "$parked" == *$PWD* ]]; then
-        echo "🚗 Site is already in parked directory!"
+        echo "🚗 Site is already parked."
     else
         echo "🔗 Linking site..."
         valet link
@@ -35,28 +35,46 @@ fi
 cd public/
 
 if test -f .env; then
-    echo ".env file already present."
+    echo ".env file is present."
 else
     if test -f .env.example; then
-        mv .env.example .env
+        cp .env.example .env
     else
         echo "KEY=value" > .env
     fi
 fi
 
-
 cd ..
 
+tld=$(valet tld)
+sitename=$(basename "$PWD")
 accountcount=$(find public/site/accounts -maxdepth 1 -type d | wc -l)
 if [[ "$accountcount" -eq 1 ]]; then
-    tld=$(valet tld)
-    sitename=$(basename "$PWD")
-    echo '✅ All done!'
-    echo "To install the panel, open:"
+    echo '✅ All set up!'
+    echo "Local site is live here: https://$sitename.$tld/"
+    echo
+    read -p "👤 Do you want to create an admin user? (y/n) " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        while true; do
+            read -p "email: " -r email
+            read -p "password: " -r -s password
+            echo
+            php scripts/createAdmin.php $email $password
+            ret=$?
+            if [ $ret -eq 0 ]; then
+                break
+            fi
+        done
+        echo '✅ Panel installed!'
+    else
+        'Ok. You can always set up your panel user here:'
+    fi
     echo "https://$sitename.$tld/panel"
 else
-    echo "The panel is already installed."
-    echo '✅ All done!'
+    echo "The panel is installed."
+    echo "✅ All done!" 
+    echo "Local site is live here: https://$sitename.$tld/"
 fi
 
 exit 0
