@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7c428a9d95db10186b4619c4132bb7e",
+    "content-hash": "c97ab8cf99f2ea39a1cd45b6e0e47f2f",
     "packages": [
         {
             "name": "bnomei/kirby3-dotenv",
@@ -614,6 +614,37 @@
                 "typography"
             ],
             "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
+            "name": "mullema/k3-panel-view-extended",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mullema/k3-panel-view-extended.git",
+                "reference": "87cf8f23a9a88c7e9b40f65de9b1b2585c7c2e45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mullema/k3-panel-view-extended/zipball/87cf8f23a9a88c7e9b40f65de9b1b2585c7c2e45",
+                "reference": "87cf8f23a9a88c7e9b40f65de9b1b2585c7c2e45",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Müller",
+                    "email": "moeli@moeli.com"
+                }
+            ],
+            "description": "Allow single language pages/site/users in a multi language setup, hide buttons in topbar and sections.",
+            "time": "2021-02-10T19:21:12+00:00"
         },
         {
             "name": "mustangostang/spyc",

@@ -1,4 +1,4 @@
-# moevbiz' Kirby Starterkit
+# 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
 
 Kirby is a file-based CMS.
 Easy to setup. Easy to use. Flexible as hell.

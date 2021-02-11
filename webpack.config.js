@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const commonConfig = {
     context: path.resolve(__dirname, './assets/src'),
-    entry: "./js/index.js",
+    entry: "./index.js",
     output: {
         path: path.resolve(__dirname, "./assets/dist"),
         filename: "./js/bundle.js",

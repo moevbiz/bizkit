@@ -2,4 +2,4 @@
 import '../css/style.css';
 
 // js
-import './scripts.js';
+import './js/scripts.js';
