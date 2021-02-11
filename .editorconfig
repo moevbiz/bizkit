@@ -7,14 +7,17 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[*.sh]
+indent_size = 2
+
 [*.md]
 indent_size = 4
 trim_trailing_whitespace = false
 
-[site/templates/**.php]
+[public/site/templates/**.php]
 indent_size = 2
 
-[site/snippets/**.php]
+[public/site/snippets/**.php]
 indent_size = 2
 
 [package.json,.{babelrc,editorconfig,eslintrc,lintstagedrc,stylelintrc}]

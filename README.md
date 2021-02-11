@@ -1,5 +1,10 @@
 # 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
 
+Requirements:
+`composer`, `npm`, `valet`
+
+# Kirby
+
 Kirby is a file-based CMS.
 Easy to setup. Easy to use. Flexible as hell.
 

@@ -4,10 +4,10 @@ const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const commonConfig = {
-    context: path.resolve(__dirname, './assets/src'),
+    context: path.resolve(__dirname, './src'),
     entry: "./index.js",
     output: {
-        path: path.resolve(__dirname, "./assets/dist"),
+        path: path.resolve(__dirname, "./public/assets"),
         filename: "./js/bundle.js",
     },
     module: {
