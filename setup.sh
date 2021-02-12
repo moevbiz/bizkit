@@ -46,6 +46,15 @@ fi
 
 cd ..
 
+while true; do
+    read -p "💬 What's the site called? " -r title
+    php scripts/siteTitle.php $title
+    ret=$?
+    if [ $ret -eq 0 ]; then
+        break
+    fi
+done
+
 tld=$(valet tld)
 sitename=$(basename "$PWD")
 accountcount=$(find public/site/accounts -maxdepth 1 -type d | wc -l)
@@ -68,7 +77,7 @@ if [[ "$accountcount" -eq 1 ]]; then
         done
         echo '✅ Panel installed!'
     else
-        'Ok. You can always set up your panel user here:'
+        'Ok. You can manually install the panel here:'
     fi
     echo "https://$sitename.$tld/panel"
 else
