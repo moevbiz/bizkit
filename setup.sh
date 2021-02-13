@@ -48,7 +48,7 @@ cd ..
 
 while true; do
     read -p "💬 What's the site called? " -r title
-    php scripts/siteTitle.php $title
+    php config/siteTitle.php $title
     ret=$?
     if [ $ret -eq 0 ]; then
         break
@@ -69,7 +69,7 @@ if [[ "$accountcount" -eq 1 ]]; then
             read -p "email: " -r email
             read -p "password: " -r -s password
             echo
-            php scripts/createAdmin.php $email $password
+            php config/createAdmin.php $email $password
             ret=$?
             if [ $ret -eq 0 ]; then
                 break

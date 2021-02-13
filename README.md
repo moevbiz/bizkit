@@ -1,7 +1,17 @@
 # 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
 
-Requirements:
+### Requirements
 `composer`, `npm`, `valet`
+
+### Info
+Kirby lives in the `public` directory.
+
+### Installation
+`bash setup.sh` – The script will install all dependencies and `valet link` the site, 
+if it's not already in a parked directory. It will prompt for the title of the site
+and email/password to install the panel. Finally it will create a `.env` file
+in the `public` directory.
+
 
 # Kirby
 

@@ -1,17 +1,13 @@
 <?php
 // Usage: php siteTitle.php '<title>'
 
+require 'authenticate.php';
+
 if (count($argv) != 2) {
     exit(1);
 }
 
 $title = (string)$argv[1];
-
-require 'public/kirby/bootstrap.php';
-
-$kirby = new Kirby([ 'roots' => [ 'index' => 'public/' ] ]);
-
-$kirby->impersonate('kirby');
 
 try {
     $kirby->site()->changeTitle($title);

@@ -1,5 +1,5 @@
 <?= snippet('header'); ?>
 
-<h1><?= $page->title() ?></h1>
+<h1><?= $site->title() ?></h1>
 
 <?= snippet('footer'); ?>

@@ -8,7 +8,7 @@ const commonConfig = {
     entry: "./index.js",
     output: {
         path: path.resolve(__dirname, "./public/assets"),
-        filename: "./js/bundle.js",
+        filename: "./js/scripts.js",
     },
     module: {
         rules: [
@@ -42,7 +42,7 @@ const commonConfig = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: './css/bundle.css'
+            filename: './css/style.css'
         }),
     ],
     resolve: {
