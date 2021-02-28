@@ -15,6 +15,7 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `site/snippets/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
 - `site/plugins/.gitignore`: allows prefixing custom plugins with (`mb-`) to automatically be included in the git repo
+- `site/plugins/mb-panel/index.js`: a panel login screen showing the page title
 
 #### Plugins
 - `k3-panel-view-extended`
@@ -23,7 +24,7 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `pagetable`
 
 ### Installation
-Run `bash setup` – The script will install all dependencies and `valet link` the site, 
+Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
 if it's not already in a parked directory. It will prompt for the title of the site
 and email/password to install the panel. Finally it will create a `.env` file
 in the `public` directory.
