@@ -1,5 +1,8 @@
 # 🍪 moevbiz' Kirby CMS boilerplate
 
+A boilerplate for Kirby CMS websites, featuring minimal, opinionated configuration, some plugin dependencies, and a setup script for quick installation from the CLI. 
+Intended to be optimized for shared hosting without proper server configuration possibilities.
+
 ### Requirements
 - Composer (https://getcomposer.org/), 
 - NPM (https://www.npmjs.com/), 
@@ -11,10 +14,10 @@ if it's not already in a parked directory. It will prompt for the title of the s
 and email/password to install the panel. Finally it will create a `.env` file
 in the `public` directory.
 
-### Info
-The production ready Kirby app lives in the `public` directory.
+It is of course possible to do all this manually.
 
-Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured file setup and some required plugins.
+### Features
+The `public` directory is intended to work as the root directory on any live environment, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
 
 #### Files
 - `site/snippets/header.php`: contains opening html and body tags and links to default assets
@@ -30,7 +33,7 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `pagetable`
 
 ### Disclaimer
-Not really intended for public use. I'll continue upgrading this template repo as I see fit.
+I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)
 
 ### Other Kirby 3 setups/templates/starterkits/inspiration
 
