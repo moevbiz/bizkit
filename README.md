@@ -1,4 +1,4 @@
-# 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
+# 🍪 moevbiz' Kirby CMS boilerplate
 
 ### Requirements
 - Composer (https://getcomposer.org/), 
@@ -28,6 +28,15 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `kirby3-dotenv`
 - `kirby3-janitor`
 - `pagetable`
+
+### Disclaimer
+Not really intended for public use. I'll continue upgrading this template repo as I see fit.
+
+### Kirby setups/templates by others:
+
+• Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
+• Murby https://github.com/FNGR2911/murby
+• Anotherkit https://github.com/Diverently/anotherkit
 
 <hr>
 
