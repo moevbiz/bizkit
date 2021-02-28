@@ -32,11 +32,13 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 ### Disclaimer
 Not really intended for public use. I'll continue upgrading this template repo as I see fit.
 
-### Kirby setups/templates by others:
+### Other Kirby 3 setups/templates/starterkits/inspiration
 
 - Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
 - Murby https://github.com/FNGR2911/murby
 - Anotherkit https://github.com/Diverently/anotherkit
+- Kirby Webpack https://github.com/brocessing/kirby-webpack
+- Kirby 3 With Public Folder Kit https://github.com/bnomei/kirby3-with-public-folder-kit
 
 <hr>
 
