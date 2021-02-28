@@ -34,9 +34,9 @@ Not really intended for public use. I'll continue upgrading this template repo a
 
 ### Kirby setups/templates by others:
 
-• Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
-• Murby https://github.com/FNGR2911/murby
-• Anotherkit https://github.com/Diverently/anotherkit
+- Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
+- Murby https://github.com/FNGR2911/murby
+- Anotherkit https://github.com/Diverently/anotherkit
 
 <hr>
 
