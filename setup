@@ -48,7 +48,7 @@ cd ..
 
 while true; do
     read -p "💬 What's the site called? " -r title
-    php config/siteTitle.php $title
+    php config/scripts/siteTitle.php $title
     ret=$?
     if [ $ret -eq 0 ]; then
         break
@@ -60,7 +60,7 @@ sitename=$(basename "$PWD")
 accountcount=$(find public/site/accounts -maxdepth 1 -type d | wc -l)
 if [[ "$accountcount" -eq 1 ]]; then
     echo '✅ All set up!'
-    echo "Local site is live here: https://$sitename.$tld/"
+    echo "Local test site: https://$sitename.$tld/"
     echo
     read -p "👤 Do you want to create an admin user? (y/n) " -n 1 -r
     echo
@@ -69,7 +69,7 @@ if [[ "$accountcount" -eq 1 ]]; then
             read -p "email: " -r email
             read -p "password: " -r -s password
             echo
-            php config/createAdmin.php $email $password
+            php config/scripts/createAdmin.php $email $password
             ret=$?
             if [ $ret -eq 0 ]; then
                 break
@@ -83,7 +83,7 @@ if [[ "$accountcount" -eq 1 ]]; then
 else
     echo "The panel is installed."
     echo "✅ All done!" 
-    echo "Local site is live here: https://$sitename.$tld/"
+    echo "Local test site: https://$sitename.$tld/"
 fi
 
 exit 0

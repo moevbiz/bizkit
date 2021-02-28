@@ -3,11 +3,15 @@
 
 require 'authenticate.php';
 
-if (count($argv) != 2) {
+print_r($argv);
+
+if (count($argv) < 2) {
     exit(1);
 }
 
-$title = (string)$argv[1];
+$title = array_slice($argv, 1);
+
+$title = implode(' ', $title);
 
 try {
     $kirby->site()->changeTitle($title);

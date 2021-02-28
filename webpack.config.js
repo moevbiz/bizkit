@@ -77,6 +77,19 @@ module.exports = (env, argv) => {
      * Production config
      */
     if (mode === 'production') {
-        return merge(commonConfig, {})
+        return merge(commonConfig, {
+            optimization: {
+                minimize: true,
+                minimizer: [
+                  new TerserPlugin({
+                    terserOptions: {
+                      compress: {
+                        drop_console: true,
+                      },
+                    },
+                  }),
+                ],
+              },
+        })
     }
 }

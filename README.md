@@ -1,16 +1,34 @@
 # 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
 
 ### Requirements
-`composer`, `npm`, `valet`
+- Composer (https://getcomposer.org/), 
+- NPM (https://www.npmjs.com/), 
+- Laravel Valet (https://laravel.com/docs/8.x/valet (MACOS) | https://cpriego.github.io/valet-linux/ (LINUX))
 
 ### Info
-Kirby lives in the `public` directory.
+The production ready Kirby app lives in the `public` directory.
+
+Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured file setup and some required plugins.
+
+#### Files
+- `site/snippets/header.php`: contains opening html and body tags and links to default assets
+- `site/snippets/footer.php`: contains closing html and body tags
+- `site/config/config.php`: automatically enables debug mode if an admin user is logged in
+- `site/plugins/.gitignore`: allows prefixing custom plugins with (`mb-`) to automatically be included in the git repo
+
+#### Plugins
+- `k3-panel-view-extended`
+- `kirby3-dotenv`
+- `kirby3-janitor`
+- `pagetable`
 
 ### Installation
-`bash setup.sh` – The script will install all dependencies and `valet link` the site, 
+Run `bash setup` – The script will install all dependencies and `valet link` the site, 
 if it's not already in a parked directory. It will prompt for the title of the site
 and email/password to install the panel. Finally it will create a `.env` file
 in the `public` directory.
+
+<hr>
 
 
 # Kirby
@@ -31,67 +49,3 @@ You can purchase your Kirby license at
 
 A Kirby license is valid for a single domain. You can find
 Kirby's license agreement here: <https://getkirby.com/license>
-
-## The Plainkit
-
-Kirby's Plainkit is the most minimal setup you can get started with.
-It does not include any content, styles or other kinds of decoration,
-so it's perfect to use this as a starting point for your own project.
-
-## The Panel
-
-You can find the login for Kirby's admin interface at
-http://yourdomain.com/panel. You will be guided through the signup
-process for your first user, when you visit the panel
-for the first time.
-
-## Installation
-
-Kirby does not require a database, which makes it very easy to
-install. Just copy Kirby's files to your server and visit the
-URL for your website in the browser.
-
-**Please check if the invisible .htaccess file has been
-copied to your server correctly**
-
-### Requirements
-
-Kirby runs on PHP 7.1+, Apache or Nginx.
-
-### Download
-
-You can download the latest version of the Plainkit
-from https://github.com/getkirby/plainkit/archive/master.zip
-
-### With Git
-
-If you are familiar with Git, you can clone Kirby's
-Plainkit repository from Github.
-
-    git clone https://github.com/getkirby/plainkit.git
-
-## Documentation
-
-<https://getkirby.com/docs>
-
-## Issues
-
-If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
-
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
-
-## Copyright
-
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>
