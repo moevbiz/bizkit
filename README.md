@@ -5,6 +5,12 @@
 - NPM (https://www.npmjs.com/), 
 - Laravel Valet (https://laravel.com/docs/8.x/valet (MACOS) | https://cpriego.github.io/valet-linux/ (LINUX))
 
+### Installation
+Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
+if it's not already in a parked directory. It will prompt for the title of the site
+and email/password to install the panel. Finally it will create a `.env` file
+in the `public` directory.
+
 ### Info
 The production ready Kirby app lives in the `public` directory.
 
@@ -22,12 +28,6 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `kirby3-dotenv`
 - `kirby3-janitor`
 - `pagetable`
-
-### Installation
-Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
-if it's not already in a parked directory. It will prompt for the title of the site
-and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory.
 
 <hr>
 
