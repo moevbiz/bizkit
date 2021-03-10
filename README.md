@@ -1,14 +1,23 @@
-# 🍪 moevbiz' Kirby CMS boilerplate (work in progress)
+# 🍪 moevbiz' Kirby CMS boilerplate
+
+A boilerplate for Kirby CMS websites, featuring minimal, opinionated configuration, some plugin dependencies, and a setup script for quick installation from the CLI. 
+Intended to be optimized for shared hosting without proper server configuration possibilities.
 
 ### Requirements
 - Composer (https://getcomposer.org/), 
 - NPM (https://www.npmjs.com/), 
 - Laravel Valet (https://laravel.com/docs/8.x/valet (MACOS) | https://cpriego.github.io/valet-linux/ (LINUX))
 
-### Info
-The production ready Kirby app lives in the `public` directory.
+### Installation
+Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
+if it's not already in a parked directory. It will prompt for the title of the site
+and email/password to install the panel. Finally it will create a `.env` file
+in the `public` directory.
 
-Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured file setup and some required plugins.
+It is of course possible to do all this manually.
+
+### Features
+The `public` directory is intended to work as the root directory on any live environment, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
 
 #### Files
 - `site/snippets/header.php`: contains opening html and body tags and links to default assets
@@ -23,11 +32,16 @@ Bizkit is basically a Kirby Plainkit, but includes a very minimal preconfigured 
 - `kirby3-janitor`
 - `pagetable`
 
-### Installation
-Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
-if it's not already in a parked directory. It will prompt for the title of the site
-and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory.
+### Disclaimer
+I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)
+
+### Other Kirby 3 setups/templates/starterkits/inspiration
+
+- Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
+- Murby https://github.com/FNGR2911/murby
+- Anotherkit https://github.com/Diverently/anotherkit
+- Kirby Webpack https://github.com/brocessing/kirby-webpack
+- Kirby 3 With Public Folder Kit https://github.com/bnomei/kirby3-with-public-folder-kit
 
 <hr>
 
