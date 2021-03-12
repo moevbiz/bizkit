@@ -9,5 +9,5 @@ return [
         // debug mode automatically active for logged in admin users
         return ['debug' => kirby()->user() !== null && kirby()->user()->role()->isAdmin()];
     },
-    'favicon' => 🍪,
+    'favicon' => '🍪',
 ];
