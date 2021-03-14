@@ -46,6 +46,7 @@ I'll continue upgrading this template repo as I see fit and won't take responsib
 - Anotherkit https://github.com/Diverently/anotherkit
 - Kirby Webpack https://github.com/brocessing/kirby-webpack
 - Kirby 3 With Public Folder Kit https://github.com/bnomei/kirby3-with-public-folder-kit
+- Mix Build Kit https://github.com/floriankarsten/kirby3-mix-build-kit
 
 <hr>
 
