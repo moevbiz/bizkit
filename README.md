@@ -17,20 +17,24 @@ in the `public` directory.
 It is of course possible to do all this manually.
 
 ### Features
-The `public` directory is intended to work as the root directory on any live environment, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
+The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
+
+⚠️ The boilerplate also contains some sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
 #### Files
-- `site/snippets/header.php`: contains opening html and body tags and links to default assets
-- `site/snippets/footer.php`: contains closing html and body tags
+- `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
+- `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
 - `site/plugins/.gitignore`: allows prefixing custom plugins with (`mb-`) to automatically be included in the git repo
 - `site/plugins/mb-panel/index.js`: a panel login screen showing the page title
 
 #### Plugins
-- `k3-panel-view-extended`
-- `kirby3-dotenv`
-- `kirby3-janitor`
-- `pagetable`
+- `sylvainjule/pagetable`,
+- `bnomei/kirby3-janitor`,
+- `bnomei/kirby3-dotenv`,
+- `mullema/k3-panel-view-extended`,
+- `oblik/kirby-link-field`,
+- `medienbaecker/autoresize`
 
 ### Disclaimer
 I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)

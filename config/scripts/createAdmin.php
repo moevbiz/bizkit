@@ -15,7 +15,8 @@ $password = (string)$argv[2];
 
 try {
     $kirby->users()->create([
-        'role' => 'admin', 
+        'role' => 'admin',
+        'name' => strstr($email, '@', true),
         'email' => $email, 
         'password' => $password,
     ]);
