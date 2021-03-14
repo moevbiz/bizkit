@@ -7,11 +7,11 @@
     <title><?= $site->title(); ?></title>
 
     <?= css([
-        'assets/dist/css/style.css',
+        'assets/css/style.css',
         ]); ?>
         
     <?= js([
-        'assets/dist/js/scripts.js',
+        'assets/js/scripts.js',
         ]); ?>
 </head>
 <body>
