@@ -2,3 +2,4 @@
 !.gitignore
 # make sure to un-ignore your custom plugins here (ex. !my-plugin)
 !my-*
+!my-*/**
