@@ -13,7 +13,7 @@ if ! [ -x "$(command -v composer)" ]; then
     exit 1
 else
     echo '🎼 Running composer install...'
-    composer install
+    cd public && composer install && cd ..
 fi
 
 if ! [ -x "$(command -v valet)" ]; then

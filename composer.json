@@ -8,22 +8,7 @@
             "email": "38008341+moevbiz@users.noreply.github.com"
         }
     ],
-    "require": {
-        "php": ">=7.3.0",
-        "getkirby/cms": "^3.3",
-        "sylvainjule/pagetable": "^1.0",
-        "bnomei/kirby3-janitor": "^2.4",
-        "bnomei/kirby3-dotenv": "^1.2",
-        "mullema/k3-panel-view-extended": "^3.0",
-        "oblik/kirby-link-field": "^3.0",
-        "medienbaecker/autoresize": "^2.0"
-    },
     "config": {
-        "optimize-autoloader": true,
-        "vendor-dir": "public/vendor"
-    },
-    "extra": {
-        "kirby-cms-path": "public/kirby",
-        "kirby-plugin-path": "public/site/plugins"
+        "optimize-autoloader": true
     }
 }
