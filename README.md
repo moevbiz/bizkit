@@ -13,7 +13,7 @@ Intended to be optimized for shared hosting without proper server configuration 
 Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
 if it's not already in a parked directory. It will prompt for the title of the site
 and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory.
+in the `public` directory and create a local config file with appropriate settings.
 
 It is of course possible to do all this manually.
 
