@@ -3,7 +3,10 @@
 
 require 'authenticate.php';
 
-print_r($argv);
+if ($kirby->site()->title() != 'bizkit') {
+    echo $kirby->site()->title() . ' sure is a nice name.';
+    exit(0);
+}
 
 if (count($argv) < 2) {
     exit(1);
