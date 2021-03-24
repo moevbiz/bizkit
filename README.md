@@ -34,7 +34,8 @@ The `public` directory is intended to work as a standalone root directory on any
 - `bnomei/kirby3-dotenv`,
 - `mullema/k3-panel-view-extended`,
 - `oblik/kirby-link-field`,
-- `medienbaecker/autoresize`
+- `medienbaecker/autoresize`,
+- `schnti/cachebuster`
 
 ### Disclaimer
 I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)
