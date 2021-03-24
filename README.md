@@ -1,6 +1,7 @@
 # 🍪 moevbiz' Kirby CMS boilerplate
 
 A boilerplate for Kirby CMS websites, featuring minimal, opinionated configuration, some plugin dependencies, and a setup script for quick installation from the CLI. 
+
 Intended to be optimized for shared hosting without proper server configuration possibilities.
 
 ### Requirements
