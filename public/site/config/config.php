@@ -11,4 +11,5 @@ return [
         return ['debug' => kirby()->user() !== null && kirby()->user()->role()->isAdmin()];
     },
     'favicon' => '🍪',
+    'schnti.cachebuster.active' => true,
 ];

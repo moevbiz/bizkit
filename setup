@@ -32,8 +32,9 @@ else
     valet secure
 fi
 
-cd public/
 
+# create env file
+cd public/
 if test -f .env; then
     echo ".env file is present."
 else
@@ -43,9 +44,9 @@ else
         echo "KEY=value" > .env
     fi
 fi
-
 cd ..
 
+# set site title
 while true; do
     read -p "💬 What's the site called? " -r title
     php config/scripts/siteTitle.php $title
@@ -55,9 +56,22 @@ while true; do
     fi
 done
 
+# valet
 tld=$(valet tld)
 sitename=$(basename "$PWD")
 accountcount=$(find public/site/accounts -maxdepth 1 -type d | wc -l)
+
+# create local config
+cd public/site/config
+if test -f config.$sitename.$tld.php; then
+    "config file exists"
+else
+    mv config.example.test.php config.$sitename.$tld.php
+    echo "local config file for $sitename.$tld created"
+fi
+cd ../../..
+
+# create account
 if [[ "$accountcount" -eq 1 ]]; then
     echo '✅ All set up!'
     echo "Local test site: https://$sitename.$tld/"

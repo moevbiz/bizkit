@@ -23,7 +23,8 @@
         "sylvainjule/pagetable": "^1.0",
         "bnomei/kirby3-janitor": "^2.4",
         "bnomei/kirby3-dotenv": "^1.2",
-        "mullema/k3-panel-view-extended": "^3.0"
+        "mullema/k3-panel-view-extended": "^3.0",
+        "schnti/cachebuster": "^1.0"
     },
     "config": {
         "optimize-autoloader": true
