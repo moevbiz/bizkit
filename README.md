@@ -38,7 +38,7 @@ The `public` directory is intended to work as a standalone root directory on any
 - `schnti/cachebuster`
 
 ### Disclaimer
-I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)
+This template repo is intended for my own use – I won't take responsibility if something doesn't work! :~)
 
 ### Other Kirby 3 setups/templates/starterkits/inspiration
 
