@@ -18,7 +18,7 @@ in the `public` directory and create a local config file with appropriate settin
 It is of course possible to do all this manually.
 
 ### Features
-The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
+The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded.
 
 ⚠️ The boilerplate also contains some sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
