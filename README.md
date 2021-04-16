@@ -26,17 +26,17 @@ The `public` directory is intended to work as a standalone root directory on any
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
 - `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
-- `site/plugins/.gitignore`: allows prefixing custom plugins with (`mb-`) to automatically be included in the git repo
+- `site/plugins/.gitignore`: allows prefixing custom plugins with (`my-`) to automatically be included in the git repo
 - `site/plugins/mb-panel/index.js`: a panel login screen showing the page title
 
 #### Plugins
-- `sylvainjule/pagetable`,
-- `bnomei/kirby3-janitor`,
-- `bnomei/kirby3-dotenv`,
-- `mullema/k3-panel-view-extended`,
-- `oblik/kirby-link-field`,
-- `medienbaecker/autoresize`,
-- `schnti/cachebuster`
+- [Pagetable](https://github.com/sylvainjule/kirby-pagetable)
+- [Janitor](https://github.com/bnomei/kirby3-janitor)
+- [Dotenv](https://github.com/bnomei/kirby3-dotenv)
+- [Panel View Extended](https://github.com/mullema/k3-panel-view-extended)
+- [Link Field](https://github.com/OblikStudio/kirby-link-field)
+- [Autoresize](https://getkirby.com/plugins/medienbaecker/autoresize)
+- [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
 
 ### Disclaimer
 This template repo is intended for my own use – I won't take responsibility if something doesn't work! :~)
