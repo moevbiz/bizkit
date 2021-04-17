@@ -26,7 +26,7 @@ The `public` directory is intended to work as a standalone root directory on any
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
 - `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
-- `site/plugins/.gitignore`: allows prefixing custom plugins with (`my-`) to automatically be included in the git repo
+- `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
 - `site/plugins/my-panel/index.js`: a panel login screen showing the page title
 
 #### Plugins
