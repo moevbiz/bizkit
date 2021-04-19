@@ -1,6 +1,7 @@
 # 🍪 moevbiz' Kirby CMS boilerplate
 
 A boilerplate for Kirby CMS websites, featuring minimal, opinionated configuration, some plugin dependencies, and a setup script for quick installation from the CLI. 
+
 Intended to be optimized for shared hosting without proper server configuration possibilities.
 
 ### Requirements
@@ -12,12 +13,12 @@ Intended to be optimized for shared hosting without proper server configuration 
 Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
 if it's not already in a parked directory. It will prompt for the title of the site
 and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory.
+in the `public` directory and create a local config file with appropriate settings.
 
 It is of course possible to do all this manually.
 
 ### Features
-The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed.
+The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded.
 
 ⚠️ The boilerplate also contains some sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
@@ -25,19 +26,20 @@ The `public` directory is intended to work as a standalone root directory on any
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
 - `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
-- `site/plugins/.gitignore`: allows prefixing custom plugins with (`mb-`) to automatically be included in the git repo
-- `site/plugins/mb-panel/index.js`: a panel login screen showing the page title
+- `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
+- `site/plugins/my-panel/index.js`: a panel login screen showing the page title
 
 #### Plugins
-- `sylvainjule/pagetable`,
-- `bnomei/kirby3-janitor`,
-- `bnomei/kirby3-dotenv`,
-- `mullema/k3-panel-view-extended`,
-- `oblik/kirby-link-field`,
-- `medienbaecker/autoresize`
+- [Pagetable](https://github.com/sylvainjule/kirby-pagetable)
+- [Janitor](https://github.com/bnomei/kirby3-janitor)
+- [Dotenv](https://github.com/bnomei/kirby3-dotenv)
+- [Panel View Extended](https://github.com/mullema/k3-panel-view-extended)
+- [Link Field](https://github.com/OblikStudio/kirby-link-field)
+- [Autoresize](https://getkirby.com/plugins/medienbaecker/autoresize)
+- [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
 
 ### Disclaimer
-I'll continue upgrading this template repo as I see fit and won't take responsibility if something doesn't work! :~)
+Please feel free to use this as a template or grab ideas for your own projects. This repo is intended for my personal use – I won't take responsibility if something doesn't work! :~)
 
 ### Other Kirby 3 setups/templates/starterkits/inspiration
 
