@@ -1,5 +1,9 @@
 # Kirby .htaccess
 
+<IfModule mod_headers.c>
+  Header always set Permissions-Policy: interest-cohort=()
+</IfModule>
+
 # rewrite rules
 <IfModule mod_rewrite.c>
 
