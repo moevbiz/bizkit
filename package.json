@@ -25,9 +25,10 @@
     "webpack-merge": "^5.3.0"
   },
   "scripts": {
-    "dev": "webpack --config webpack.config.js --mode=development --watch",
-    "mix-dev": "webpack --watch --progress --config=$npm_package_config_webpack --mode=development",
-    "build": "webpack --config webpack.config.js",
+    "wpdev": "webpack --config webpack.config.js --mode=development --watch",
+    "dev": "webpack --watch --progress --config=$npm_package_config_webpack --mode=development",
+    "wpbuild": "webpack --config webpack.config.js",
+    "build": "webpack --progress --config=$npm_package_config_webpack --mode=production",
     "push": "git add . && git commit -m \"$(date +\"%Y-%m-%d %T\")\" && git push"
   },
   "repository": {
