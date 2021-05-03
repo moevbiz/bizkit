@@ -19,7 +19,7 @@
     },
     "require": {
         "php": ">=7.1.0",
-        "getkirby/cms": "^3.0",
+        "getkirby/cms": "^3.5.4",
         "sylvainjule/pagetable": "^1.0",
         "bnomei/kirby3-janitor": "^2.4",
         "bnomei/kirby3-dotenv": "^1.2",

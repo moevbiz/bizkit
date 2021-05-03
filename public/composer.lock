@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57e36b20bab09d614223a8eb4edf2783",
+    "content-hash": "877741a6feeff02e3a54df97b8a244c0",
     "packages": [
         {
             "name": "bnomei/kirby3-dotenv",
@@ -75,16 +75,16 @@
         },
         {
             "name": "bnomei/kirby3-janitor",
-            "version": "2.6.5",
+            "version": "2.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bnomei/kirby3-janitor.git",
-                "reference": "84f4d534ae6745f8506a21973a3e2a2e86c80eb4"
+                "reference": "5a0b7f8a169a492ef6d2d776600762c3e5cd59ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-janitor/zipball/84f4d534ae6745f8506a21973a3e2a2e86c80eb4",
-                "reference": "84f4d534ae6745f8506a21973a3e2a2e86c80eb4",
+                "url": "https://api.github.com/repos/bnomei/kirby3-janitor/zipball/5a0b7f8a169a492ef6d2d776600762c3e5cd59ae",
+                "reference": "5a0b7f8a169a492ef6d2d776600762c3e5cd59ae",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-22T18:00:36+00:00"
+            "time": "2021-04-15T05:41:55+00:00"
         },
         {
             "name": "claviska/simpleimage",
@@ -247,16 +247,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.5.3.1",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "38afb2d650f3764d23d732b23ae8f04ab9ffba69"
+                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/38afb2d650f3764d23d732b23ae8f04ab9ffba69",
-                "reference": "38afb2d650f3764d23d732b23ae8f04ab9ffba69",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/3d580d869e44496c8b145835d4bbbbe95e7559d8",
+                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8",
                 "shasum": ""
             },
             "require": {
@@ -309,7 +309,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-02-24T16:10:44+00:00"
+            "time": "2021-04-27T08:33:54+00:00"
         },
         {
             "name": "getkirby/composer-installer",
