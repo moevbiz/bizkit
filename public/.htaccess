@@ -15,6 +15,10 @@ RewriteEngine on
 RewriteCond %{HTTPS} off 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# cachebuster
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.(\d+)\.(js|css)$ $1.$3 [L]
+
 # make sure to set the RewriteBase correctly
 # if you are running the site in a subfolder.
 # Otherwise links or the entire site will break.
