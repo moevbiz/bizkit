@@ -8,28 +8,27 @@
     "packages": [
         {
             "name": "bnomei/kirby3-dotenv",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bnomei/kirby3-dotenv.git",
-                "reference": "430196107ed6083d554e4172e75e9fbee3e014db"
+                "reference": "3a1c02b5e407111e631f233437dfb219d6a1cb4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-dotenv/zipball/430196107ed6083d554e4172e75e9fbee3e014db",
-                "reference": "430196107ed6083d554e4172e75e9fbee3e014db",
+                "url": "https://api.github.com/repos/bnomei/kirby3-dotenv/zipball/3a1c02b5e407111e631f233437dfb219d6a1cb4d",
+                "reference": "3a1c02b5e407111e631f233437dfb219d6a1cb4d",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.1",
-                "php": ">=7.2.0",
-                "vlucas/phpdotenv": "^2.5"
+                "php": ">=7.3.0",
+                "vlucas/phpdotenv": "^2.6"
             },
             "require-dev": {
-                "getkirby/cms": "^3.2",
-                "nunomaduro/phpinsights": "^1.8",
+                "getkirby/cms": "^3.5",
                 "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^8.3"
+                "phpunit/phpunit": "^9.5"
             },
             "suggest": {
                 "bnomei/kirby3-janitor": "Use a Panel Button or PHP code to clear the cache",
@@ -71,33 +70,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-22T17:46:56+00:00"
+            "time": "2021-05-16T13:57:28+00:00"
         },
         {
             "name": "bnomei/kirby3-janitor",
-            "version": "2.6.6",
+            "version": "2.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bnomei/kirby3-janitor.git",
-                "reference": "5a0b7f8a169a492ef6d2d776600762c3e5cd59ae"
+                "reference": "dff1ed317bd393109706de5e5b8471c6e1072a9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-janitor/zipball/5a0b7f8a169a492ef6d2d776600762c3e5cd59ae",
-                "reference": "5a0b7f8a169a492ef6d2d776600762c3e5cd59ae",
+                "url": "https://api.github.com/repos/bnomei/kirby3-janitor/zipball/dff1ed317bd393109706de5e5b8471c6e1072a9e",
+                "reference": "dff1ed317bd393109706de5e5b8471c6e1072a9e",
                 "shasum": ""
             },
             "require": {
-                "getkirby/composer-installer": "^1.1",
-                "league/climate": "^3.5",
-                "php": ">=7.2.0",
-                "symfony/finder": "^4.3"
+                "getkirby/composer-installer": "^1.2",
+                "league/climate": "^3.7",
+                "php": ">=7.3.0",
+                "symfony/finder": "^4.4"
             },
             "require-dev": {
-                "getkirby/cms": "^3.2",
-                "nunomaduro/phpinsights": "^1.8",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^8.3"
+                "getkirby/cms": "^3.5",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^9.5"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -137,20 +135,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-15T05:41:55+00:00"
+            "time": "2021-05-14T17:58:07+00:00"
         },
         {
             "name": "claviska/simpleimage",
-            "version": "3.5.1",
+            "version": "3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "ab2ab8a4672738ab77b39b00922ee4e79aeadb11"
+                "reference": "21b6f4bf4ef1927158b3e29bd0c2d99c6681c750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/ab2ab8a4672738ab77b39b00922ee4e79aeadb11",
-                "reference": "ab2ab8a4672738ab77b39b00922ee4e79aeadb11",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/21b6f4bf4ef1927158b3e29bd0c2d99c6681c750",
+                "reference": "21b6f4bf4ef1927158b3e29bd0c2d99c6681c750",
                 "shasum": ""
             },
             "require": {
@@ -182,20 +180,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-30T20:47:26+00:00"
+            "time": "2021-04-20T12:18:18+00:00"
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.1",
+            "version": "2.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771"
+                "reference": "c13c0be93cff50f88bbd70827d993026821914dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/307fb34a5ab697461ec4c9db865b20ff2fd40771",
-                "reference": "307fb34a5ab697461ec4c9db865b20ff2fd40771",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/c13c0be93cff50f88bbd70827d993026821914dd",
+                "reference": "c13c0be93cff50f88bbd70827d993026821914dd",
                 "shasum": ""
             },
             "require": {
@@ -243,33 +241,39 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2020-11-01T12:00:00+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/denis-sokolov",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-25T12:00:00+00:00"
         },
         {
             "name": "getkirby/cms",
-            "version": "3.5.4",
+            "version": "3.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8"
+                "reference": "efe24a6ef4ad61010428b1cb725f8f97a633ff82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/3d580d869e44496c8b145835d4bbbbe95e7559d8",
-                "reference": "3d580d869e44496c8b145835d4bbbbe95e7559d8",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/efe24a6ef4ad61010428b1cb725f8f97a633ff82",
+                "reference": "efe24a6ef4ad61010428b1cb725f8f97a633ff82",
                 "shasum": ""
             },
             "require": {
-                "claviska/simpleimage": "3.5.1",
+                "claviska/simpleimage": "3.6.3",
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
-                "filp/whoops": "2.9.1",
+                "filp/whoops": "2.12.1",
                 "getkirby/composer-installer": "^1.2.0",
                 "laminas/laminas-escaper": "2.7.0",
                 "michelf/php-smartypants": "1.8.1",
                 "mustangostang/spyc": "0.6.3",
                 "php": ">=7.3.0 <8.1.0",
-                "phpmailer/phpmailer": "6.2.0",
+                "phpmailer/phpmailer": "6.4.1",
                 "true/punycode": "2.1.1"
             },
             "type": "kirby-cms",
@@ -309,7 +313,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-04-27T08:33:54+00:00"
+            "time": "2021-05-11T09:49:47+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -713,16 +717,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.2.0",
+            "version": "v6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "e38888a75c070304ca5514197d4847a59a5c853f"
+                "reference": "9256f12d8fb0cd0500f93b19e18c356906cbed3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/e38888a75c070304ca5514197d4847a59a5c853f",
-                "reference": "e38888a75c070304ca5514197d4847a59a5c853f",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/9256f12d8fb0cd0500f93b19e18c356906cbed3d",
+                "reference": "9256f12d8fb0cd0500f93b19e18c356906cbed3d",
                 "shasum": ""
             },
             "require": {
@@ -740,7 +744,7 @@
                 "yoast/phpunit-polyfills": "^0.2.0"
             },
             "suggest": {
-                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
                 "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
                 "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
                 "psr/log": "For optional PSR-3 debug logging",
@@ -781,20 +785,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-25T15:24:57+00:00"
+            "time": "2021-04-29T12:25:04+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
-                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +822,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for logging libraries",
@@ -828,7 +832,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2020-03-23T09:12:05+00:00"
+            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "schnti/cachebuster",
@@ -957,16 +961,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.20",
+            "version": "v4.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2543795ab1570df588b9bbd31e1a2bd7037b94f6"
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2543795ab1570df588b9bbd31e1a2bd7037b94f6",
-                "reference": "2543795ab1570df588b9bbd31e1a2bd7037b94f6",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a96bc19ed87c88eec78e1a4c803bdc1446952983",
+                "reference": "a96bc19ed87c88eec78e1a4c803bdc1446952983",
                 "shasum": ""
             },
             "require": {
@@ -1011,7 +1015,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-12T10:48:09+00:00"
+            "time": "2021-05-16T12:27:45+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
