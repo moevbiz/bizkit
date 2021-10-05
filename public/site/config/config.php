@@ -5,8 +5,8 @@ $dotenv->load();
 // get environment variable with $_ENV['KEY']
 
 return [
-    'hooks' => include_once 'hooks.php',
-    'routes' => include_once 'routes.php',
+    // 'hooks' => include_once 'hooks.php',
+    // 'routes' => include_once 'routes.php',
     
     'ready' => function ($kirby) {
         // debug mode automatically active for logged in admin users
