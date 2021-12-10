@@ -50,6 +50,7 @@ Please feel free to use this as a template or grab ideas for your own projects. 
 - Kirby 3 With Public Folder Kit https://github.com/bnomei/kirby3-with-public-folder-kit
 - Mix Build Kit https://github.com/floriankarsten/kirby3-mix-build-kit
 - Kirby Plainkit Cookiecutter https://github.com/beste/kirby-plainkit/
+- k3 Projectkit https://github.com/rasteiner/k3-projectkit
 
 <hr>
 
