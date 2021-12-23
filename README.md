@@ -42,6 +42,7 @@ The `public` directory is intended to work as a standalone root directory on any
 Please feel free to use this as a template or grab ideas for your own projects. This repo is intended for my personal use – I won't take responsibility if something doesn't work! :~)
 
 ### Other Kirby 3 setups/templates/starterkits/inspiration
+(...that i may or may not have taken inspiration from)
 
 - Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
 - Murby https://github.com/FNGR2911/murby
@@ -51,6 +52,7 @@ Please feel free to use this as a template or grab ideas for your own projects. 
 - Mix Build Kit https://github.com/floriankarsten/kirby3-mix-build-kit
 - Kirby Plainkit Cookiecutter https://github.com/beste/kirby-plainkit/
 - k3 Projectkit https://github.com/rasteiner/k3-projectkit
+- Coralic Kirby Plainkit https://github.com/coralic/kirby-plainkit
 
 <hr>
 
