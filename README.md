@@ -1,8 +1,6 @@
 # 🍪 moevbiz' Kirby CMS boilerplate
 
-A boilerplate for Kirby CMS websites, featuring minimal, opinionated configuration, some plugin dependencies, and a setup script for quick installation from the CLI. 
-
-Intended to be optimized for shared hosting without proper server configuration possibilities.
+A boilerplate for Kirby CMS websites, featuring opinionated configuration, some plugin dependencies, and a setup script for quick installation. Intended to be optimized for run-of-the-mill shared apache hosting without desire or possibility for deep server configuration.
 
 ### Requirements
 - Composer (https://getcomposer.org/), 
@@ -13,16 +11,14 @@ Intended to be optimized for shared hosting without proper server configuration 
 Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
 if it's not already in a parked directory. It will prompt for the title of the site
 and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory and create a local config file with appropriate settings.
-
-It is of course possible to do all this manually.
+in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
 
 ### Features
-The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and drastically improves the speed of file synching, because large directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded.
+The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and may improve the speed of file synching, especially using (S)FTP, because source directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded.
 
-⚠️ The boilerplate also contains some sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
+⚠️ The boilerplate also contains sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
-#### Files
+#### Opinionated Files
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
 - `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
@@ -39,7 +35,7 @@ The `public` directory is intended to work as a standalone root directory on any
 - [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
 
 ### Disclaimer
-Please feel free to use this as a template or grab ideas for your own projects. This repo is intended for my personal use – I won't take responsibility if something doesn't work! :~)
+Please feel free to use this as a template or grab ideas for your own projects. This boilerplate is intended for my personal use and I won't take responsibility if something doesn't work! :~)
 
 ### Other Kirby 3 setups/templates/starterkits/inspiration
 (...that i may or may not have taken inspiration from)
