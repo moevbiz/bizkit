@@ -16,6 +16,7 @@
     "file-loader": "^6.2.0",
     "laravel-mix": "^6.0.13",
     "mini-css-extract-plugin": "^1.3.3",
+    "rploy": "^1.0.0",
     "sass": "^1.32.4",
     "sass-loader": "^10.1.1",
     "terser-webpack-plugin": "^5.1.1",
@@ -27,7 +28,27 @@
   "scripts": {
     "dev": "webpack --watch --progress --config=$npm_package_config_webpack --mode=development",
     "build": "webpack --progress --config=$npm_package_config_webpack --mode=production",
-    "push": "git add . && git commit -m \"$(date +\"%Y-%m-%d %T\")\" && git push"
+    "push": "git add . && git commit -m \"$(date +\"%Y-%m-%d %T\")\" && git push",
+    "deploy": "npm run build && npx rploy"
+  },
+  "rploy": {
+    "source": "public/",
+    "destination": "user@ip:/var/www/public/",
+    "progress": true,
+    "exclude": [
+      ".DS_Store",
+      "Icon",
+      "node_modules",
+      ".git",
+      "/site/sessions",
+      "/site/accounts",
+      "/site/cache",
+      "/site/config/.license",
+      "/media",
+      "/content",
+      "/matomo",
+      ".awstats"
+    ]
   },
   "repository": {
     "type": "git",
