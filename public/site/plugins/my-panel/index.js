@@ -1,16 +1,19 @@
-panel.plugin('bruno/panel-theme', {
-    login: {
-        computed: {
-            title() {
-                return this.$store.state.system.info.title;
-            }
-        },
-        template: `
-        <div class="face-login-form">
-            <h1>{{ title }}</h1>
-            <br>
-            <k-login />
-        </div>
-        `
-    }
-});
+panel.plugin('moevbiz/panel', {
+    // components: {
+    //   'k-login-view': {
+    //     props: {
+    //       users: Array
+    //     },
+    //     template: `
+    //       <k-inside>
+    //         <k-header>Users</k-header>
+    //         <ul>
+    //           <li v-for="user in users" :key="user.id">
+    //             {{ user.username }}
+    //           </li>
+    //         </ul>
+    //       </k-inside>
+    //     `
+    //   }
+    // }
+  });
