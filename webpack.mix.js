@@ -36,7 +36,7 @@ if (! mix.inProduction()) {
       ],
       host: domain,
       port: 3000,
-      open: 'external',
+      open: false,
       notify: false,
       online: false,
       

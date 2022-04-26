@@ -6,5 +6,7 @@ return [
     'ready' => function ($kirby) {
         return ['debug' => true];
     },
+    'debug' => true,
+    'genxbe.ray.enabled' => true,
     'schnti.cachebuster.active' => false,
 ];
