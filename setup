@@ -36,7 +36,7 @@ fi
 # create env file
 cd public/
 if test -f .env; then
-    echo ".env file is present."
+    echo ".env file is present in public folder."
 else
     if test -f .env.example; then
         cp .env.example .env
@@ -45,6 +45,16 @@ else
     fi
 fi
 cd ..
+
+if test -f .env; then
+    echo ".env file is present in root directory."
+else
+    if test -f .env.example; then
+        cp .env.example .env
+    else
+        echo "KEY=value" > .env
+    fi
+fi
 
 # set site title
 while true; do
