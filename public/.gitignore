@@ -3,7 +3,7 @@
 .env.old
 
 # maybe don't add content to git repository
-# /content
+/content
 
 /assets
 
