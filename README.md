@@ -49,6 +49,7 @@ Please feel free to use this as a template or grab ideas for your own projects. 
 - Kirby Plainkit Cookiecutter https://github.com/beste/kirby-plainkit/
 - k3 Projectkit https://github.com/rasteiner/k3-projectkit
 - Coralic Kirby Plainkit https://github.com/coralic/kirby-plainkit
+- KAT Kit https://github.com/whiterussianstudio/kat-kit
 
 <hr>
 
