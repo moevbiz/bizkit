@@ -1,43 +1,50 @@
-# 🍪 moevbiz' Kirby CMS boilerplate
+# Bizkit: a Kirby CMS starter-kit
 
-A boilerplate for Kirby CMS websites, featuring opinionated configuration, some plugin dependencies, and a setup script for quick installation. Intended to be optimized for run-of-the-mill shared apache hosting without desire or possibility for deep server configuration.
+This is a template repository for Kirby CMS websites, featuring opinionated configuration, some plugin dependencies, and a setup script for quick installation. Intended to be optimized for run-of-the-mill shared apache hosting without desire or possibility for deep server configuration.
+
+> ### Disclaimer
+> Please feel free to use this as a template or grab inspiration for your own projects. This boilerplate is intended for my personal use and I won't take responsibility if something doesn't work! :~) 🍪 
 
 ### Requirements
-- Composer (https://getcomposer.org/), 
-- NPM (https://www.npmjs.com/), 
-- Laravel Valet (https://laravel.com/docs/8.x/valet (MACOS) | https://cpriego.github.io/valet-linux/ (LINUX))
+- [Composer](https://getcomposer.org/)
+- [npm](https://www.npmjs.com/)
+- [Laravel Valet](https://laravel.com/docs/8.x/valet) or [Valet Linux](https://cpriego.github.io/valet-linux/)
 
 ### Installation
-Run `bash setup` – The walkthrough script will install all dependencies and `valet link` the site, 
-if it's not already in a parked directory. It will prompt for the title of the site
-and email/password to install the panel. Finally it will create a `.env` file
-in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
+1. [Create a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
+2. Donwload or clone your repository and navigate to the directory
+3. run `bash setup`
+
+The walkthrough script will (1) install all `Composer` and `npm` dependencies, (2) `valet link` the site if it's not already in a parked directory, (3) prompt for the title of the site and an email/password combination to install the panel, (4) create a `.env` file in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
 
 ### Features
-The `public` directory is intended to work as a standalone root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and may improve the speed of file synching, especially using (S)FTP, because source directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded.
 
-⚠️ The boilerplate also contains sensitive PHP scripts, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
+#### Main features
+- **Automated `setup` script** to get started from the CLI without much configuration
+- **`public` directory** – This is intended to work as the root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and may improve the speed of file synching, especially using (S)FTP, because source directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded. It also means composer dependencies such as Kirby Plugins need to be required from within the `public` directory.
+- ⚠️ The template also contains **sensitive PHP scripts**, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
-#### Opinionated Files
-- `site/snippets/global/header.php`: contains opening html and body tags and links to default assets
-- `site/snippets/global/footer.php`: contains closing html and body tags
-- `site/config/config.php`: automatically enables debug mode if an admin user is logged in
-- `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
-- `site/plugins/my-panel/index.js`: a panel login screen showing the page title
+#### Development tools
+- [SASS](https://sass-lang.com)
+- [Laravel Mix](https://laravel-mix.com) with BrowserSync enabled and configured
+- [rploy](https://github.com/jongacnik/rploy) and Kirby-Specific configuration for rapid file transfer
 
-#### Plugins
-- [Pagetable](https://github.com/sylvainjule/kirby-pagetable)
-- [Janitor](https://github.com/bnomei/kirby3-janitor)
+#### Kirby Plugins
 - [Dotenv](https://github.com/bnomei/kirby3-dotenv)
-- [Panel View Extended](https://github.com/mullema/k3-panel-view-extended)
 - [Link Field](https://github.com/OblikStudio/kirby-link-field)
 - [Autoresize](https://getkirby.com/plugins/medienbaecker/autoresize)
 - [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
+- [Kirby Ray](https://github.com/genxbe/kirby3-ray)
 
-### Disclaimer
-Please feel free to use this as a template or grab ideas for your own projects. This boilerplate is intended for my personal use and I won't take responsibility if something doesn't work! :~)
+#### Opinionated files and small conveniences
+- `site/snippets/global/header.php`: contains opening html and body tags and links to default assets, and an Emoji favicon
+- `site/snippets/global/footer.php`: contains closing html and body tags
+- `site/config/config.php`: automatically enables debug mode if an admin user is logged in
+- `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
 
-### Other Kirby 3 setups/templates/starterkits/inspiration
+<hr>
+
+### Other Kirby 3 setups/templates/starterkits/boilerplates
 (...that i may or may not have taken inspiration from)
 
 - Forge Lite Kirby https://github.com/HashandSalt/ForgeLiteKirby
