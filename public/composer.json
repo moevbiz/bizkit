@@ -20,8 +20,6 @@
     "require": {
         "php": ">=7.4.0",
         "getkirby/cms": "^3.6",
-        "sylvainjule/pagetable": "^1.0",
-        "bnomei/kirby3-janitor": "^2.4",
         "bnomei/kirby3-dotenv": "^1.2",
         "schnti/cachebuster": "^1.0",
         "genxbe/kirby3-ray": "^1.0"
