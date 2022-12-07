@@ -40,6 +40,7 @@ The walkthrough script will (1) install all `Composer` and `npm` dependencies, (
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets, and an Emoji favicon
 - `site/snippets/global/footer.php`: contains closing html and body tags
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
+- `site/config/routes.php`: if a `prelaunch` option is set, the site will be hidden for the public and all requests are redirected to the login screen
 - `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
 
 <hr>
