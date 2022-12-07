@@ -17,6 +17,9 @@ This is a template repository for Kirby CMS websites, featuring opinionated conf
 
 The walkthrough script will (1) install all `Composer` and `npm` dependencies, (2) `valet link` the site if it's not already in a parked directory, (3) prompt for the title of the site and an email/password combination to install the panel, (4) create a `.env` file in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
 
+### Usage
+`npm run dev` to start local dev server with hot reload. `npm run deploy` to bundle assets and deploy to server. `npm run push` to lazily push everything to GitHub (Consider writing helpful commit messages instead). 
+
 ### Features
 
 #### Main features
