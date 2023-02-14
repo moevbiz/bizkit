@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
 
 mix.copyDirectory('src/fonts', 'public/assets/fonts');
 mix.copyDirectory('src/images', 'public/assets/images');
@@ -40,7 +41,13 @@ mix.sass('src/sass/style.scss', 'public/assets/css').sourceMaps(true, 'source-ma
 
 mix.options({
   processCssUrls: false,
-  postCss: [],
+  postCss: [
+    tailwindcss('./tailwind.config.js'),
+      require('autoprefixer'),
+      ...process.env.NODE_ENV === 'production'
+      ? [cssnano] // what other postcss plugins should run when doing parcel build
+      : []
+  ],
 
 })
 

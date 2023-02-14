@@ -41,5 +41,9 @@
   "bugs": {
     "url": "https://github.com/moevbiz/bizkit/issues"
   },
-  "homepage": "https://github.com/moevbiz/bizkit#readme"
+  "homepage": "https://github.com/moevbiz/bizkit#readme",
+  "dependencies": {
+    "alpinejs": "^3.11.1",
+    "tailwindcss": "^3.2.6"
+  }
 }

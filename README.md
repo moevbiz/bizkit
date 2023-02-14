@@ -31,6 +31,8 @@ The walkthrough script will (1) install all `Composer` and `npm` dependencies, (
 - [SASS](https://sass-lang.com)
 - [Laravel Mix](https://laravel-mix.com) with BrowserSync enabled and configured
 - [rploy](https://github.com/jongacnik/rploy) and Kirby-Specific configuration for rapid file transfer
+- [Tailwind](https://tailwindcss.com) preinstalled
+- [Alpine.js](https://alpinejs.dev) preinstalled
 
 #### Kirby Plugins
 - [Dotenv](https://github.com/bnomei/kirby3-dotenv)
