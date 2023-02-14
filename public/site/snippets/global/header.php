@@ -9,9 +9,5 @@
     <?= css([
         'assets/css/style.css',
         ]); ?>
-        
-    <?= js([
-        'assets/js/scripts.js',
-        ]); ?>
 </head>
 <body>
