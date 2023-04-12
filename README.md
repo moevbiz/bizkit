@@ -35,9 +35,6 @@ The walkthrough script will (1) install all `Composer` and `npm` dependencies, (
 - [Alpine.js](https://alpinejs.dev) preinstalled
 
 #### Kirby Plugins
-- [Dotenv](https://github.com/bnomei/kirby3-dotenv)
-- [Link Field](https://github.com/OblikStudio/kirby-link-field)
-- [Autoresize](https://getkirby.com/plugins/medienbaecker/autoresize)
 - [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
 - [Kirby Ray](https://github.com/genxbe/kirby3-ray)
 
