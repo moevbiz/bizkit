@@ -1,36 +1,21 @@
-# Bizkit: a Kirby CMS starter-kit
+# Bizkit: a Kirby starter-kit
 
-This is a template repository for Kirby CMS websites, featuring opinionated configuration, some plugin dependencies, and a setup script for quick installation. Intended to be optimized for run-of-the-mill shared apache hosting without desire or possibility for deep server configuration.
+Template repository for [Kirby CMS](https://getkirby.com/) websites. Featuring opinionated configuration, some plugin dependencies, and a setup script for quick installation. Built to use with run-of-the-mill shared hosting providers.
 
 > ### Disclaimer
-> Please feel free to use this as a template or grab inspiration for your own projects. This boilerplate is intended for my personal use and I won't take responsibility if something doesn't work! :~) 🍪 
-
-### Requirements
-- [Composer](https://getcomposer.org/)
-- [npm](https://www.npmjs.com/)
-- [Laravel Valet](https://laravel.com/docs/8.x/valet) or [Valet Linux](https://cpriego.github.io/valet-linux/)
-
-### Installation
-1. [Create a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
-2. Donwload or clone your repository and navigate to the directory
-3. run `bash setup`
-
-The walkthrough script will (1) install all `Composer` and `npm` dependencies, (2) `valet link` the site if it's not already in a parked directory, (3) prompt for the title of the site and an email/password combination to install the panel, (4) create a `.env` file in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
-
-### Usage
-`npm run dev` to start local dev server with hot reload. `npm run deploy` to bundle assets and deploy to server using [rploy](https://github.com/jongacnik/rploy). `npm run push` to lazily push everything to GitHub (Consider writing helpful commit messages instead). 
+> Feel free to use this as a template or inspiration for your own projects. This boilerplate is intended for my personal use and I won't take responsibility if something doesn't work as intended 🍪
 
 ### Features
 
 #### Main features
-- **Automated `setup` script** to get started from the CLI without much configuration
-- **`public` directory** – This is intended to work as the root directory on any live server, while the entire kit can remain under version control. This helps keeping the build clean and may improve the speed of file synching, especially using (S)FTP, because source directories such as `.git` or `.node_modules` don't have to be parsed or manually excluded. It also means composer dependencies such as Kirby Plugins need to be required from within the `public` directory.
-- ⚠️ The template also contains **sensitive PHP scripts**, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
+- **`setup` script** to get started from the CLI without much configuration
+- **`/public/` directory** intended to work as the root directory on any live server, while the entire kit can remain under version control
+- deployment with rploy
 
 #### Development tools
-- [SASS](https://sass-lang.com)
 - [Laravel Mix](https://laravel-mix.com) with BrowserSync enabled and configured
-- [rploy](https://github.com/jongacnik/rploy) and Kirby-Specific configuration for rapid file transfer
+- [rploy](https://github.com/jongacnik/rploy) and Kirby-specific configuration for rapid deployment
+- [SASS](https://sass-lang.com) preinstalled
 - [Tailwind](https://tailwindcss.com) preinstalled
 - [Alpine.js](https://alpinejs.dev) preinstalled
 
@@ -44,6 +29,28 @@ The walkthrough script will (1) install all `Composer` and `npm` dependencies, (
 - `site/config/config.php`: automatically enables debug mode if an admin user is logged in
 - `site/config/routes.php`: if a `prelaunch` option is set, the site will be hidden for the public and all requests are redirected to the login screen
 - `site/plugins/.gitignore`: allows prefixing custom plugins with "`my-`" to automatically be included in the git repo
+
+
+### Requirements
+- [Composer](https://getcomposer.org/)
+- [npm](https://www.npmjs.com/)
+- [Laravel Valet](https://laravel.com/docs/8.x/valet) or [Valet Linux](https://cpriego.github.io/valet-linux/)
+
+### Installation
+1. [Create a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
+2. Donwload or clone your repository and navigate to the directory
+3. run `bash setup`
+
+The walkthrough script will (1) install all dependencies, (2) `valet link` the site if it's not already in a parked directory, (3) prompt for the title of the site and an email/password combination to install the panel, (4) create a `.env` file in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
+
+### Usage
+```npm run dev``` to start local dev server with hot reload. 
+
+`npm run deploy` to bundle assets and deploy to server using [rploy](https://github.com/jongacnik/rploy). 
+
+> ⚠️ The template also contains **sensitive PHP scripts**, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
+
+`npm run push` to lazily push everything to remote repository (consider writing meaningful commit messages instead). 
 
 <hr>
 
