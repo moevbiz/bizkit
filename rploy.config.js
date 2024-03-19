@@ -17,8 +17,9 @@ module.exports = {
         "/matomo",
         ".awstats",
         "/media",
-        "/site/accounts",
         "/site/config/.license",
+        // comment these two out before initial launch
+        "/site/accounts",
         "/content",
     ]
 }

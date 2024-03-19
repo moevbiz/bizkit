@@ -3,6 +3,11 @@
 return [
     'hooks' => include 'hooks.php',
     'routes' => include 'routes.php',
+
+    // enable debug for domains that end on ".test"
+    'debug' => str_ends_with($_SERVER['SERVER_NAME'] ?? '', '.test') || @$_SERVER['SERVER_NAME'] === 'localhost',
+
+    // 'slugs' => 'de',
     
     'ready' => function ($kirby) {
         // debug mode automatically active for logged in admin users

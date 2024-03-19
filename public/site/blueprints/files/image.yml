@@ -1,0 +1,18 @@
+title: image
+
+accept:
+  mime: image/*
+  type: image
+
+fields:
+  caption:
+    label: image-caption
+    type: writer
+    nodes: false
+    inline: true
+  alt:
+    label: image-alt
+    type: text
+  credits:
+    type: text
+    label: image-credits
