@@ -11,6 +11,7 @@ Template repository for [Kirby CMS](https://getkirby.com/) websites. Featuring o
 - **`setup` script** to get started from the CLI without much configuration
 - **`/public/` directory** intended to work as the root directory on any live server, while the entire kit can remain under version control
 - deployment with rploy
+- uses pnpm to save disk space
 
 #### Development tools
 - [Laravel Mix](https://laravel-mix.com) with BrowserSync enabled and configured
@@ -33,7 +34,7 @@ Template repository for [Kirby CMS](https://getkirby.com/) websites. Featuring o
 
 ### Requirements
 - [Composer](https://getcomposer.org/)
-- [npm](https://www.npmjs.com/)
+- [pnpm](https://pnpm.io)
 - [Laravel Valet](https://laravel.com/docs/8.x/valet) or [Valet Linux](https://cpriego.github.io/valet-linux/)
 
 ### Installation
@@ -44,13 +45,13 @@ Template repository for [Kirby CMS](https://getkirby.com/) websites. Featuring o
 The walkthrough script will (1) install all dependencies, (2) `valet link` the site if it's not already in a parked directory, (3) prompt for the title of the site and an email/password combination to install the panel, (4) create a `.env` file in the `public` directory and create a local config file with appropriate settings. It is of course possible to do all this manually.
 
 ### Usage
-```npm run dev``` to start local dev server with hot reload. 
+```pnpm run dev``` to start local dev server with hot reload. 
 
-`npm run deploy` to bundle assets and deploy to server using [rploy](https://github.com/jongacnik/rploy). 
+`pnpm run deploy` to bundle assets and deploy to server using [rploy](https://github.com/jongacnik/rploy). 
 
 > ⚠️ The template also contains **sensitive PHP scripts**, such as `authenticate.php` which authenticates as almighty. It is not recommended to sync anything but the `public` directory to a production environment.
 
-`npm run push` to lazily push everything to remote repository (consider writing meaningful commit messages instead). 
+`pnpm run push` to lazily push everything to remote repository (consider writing meaningful commit messages instead). 
 
 <hr>
 

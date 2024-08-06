@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if ! [ -x "$(command -v npm)" ]; then
-    echo '❗️ Error: npm is not installed.' >&2
+if ! [ -x "$(command -v pnpm)" ]; then
+    echo '❗️ Error: pnpm is not installed.' >&2
     exit 1
 else
     echo '📦 Running npm install...'
-    npm install
+    pnpm install
 fi
 
 if ! [ -x "$(command -v composer)" ]; then
