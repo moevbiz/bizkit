@@ -1,0 +1,4 @@
+title: Admin
+fields:
+  empty:
+    type: hidden
