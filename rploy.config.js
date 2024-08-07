@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 module.exports = {
-    source: '/public',
+    source: 'public/',
     branches: {
         master: process.env.MASTER,
         dev: process.env.DEV,
