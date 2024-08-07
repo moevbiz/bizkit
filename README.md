@@ -23,6 +23,7 @@ Template repository for [Kirby CMS](https://getkirby.com/) websites. Featuring o
 #### Kirby Plugins
 - [Cachebuster](https://github.com/schnti/kirby3-cachebuster)
 - [Kirby Ray](https://github.com/genxbe/kirby3-ray)
+- [Meta Tags](https://github.com/wearejust/kirby-meta-tags)
 
 #### Opinionated files and small conveniences
 - `site/snippets/global/header.php`: contains opening html and body tags and links to default assets, and an Emoji favicon
