@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// used by alpine.js
+[x-cloak] { display: none !important; }
